@@ -2,11 +2,7 @@
 
 HTML/JavaScript implementation of the [WRF Preprocessing System (WPS)](https://esrl.noaa.gov/gsd/wrfportal/DomainWizard.html) for creating and editing namelist.wps files.
 
-[Demo](https://jiririchter.github.io/WRFDomainWizard/)
-
-## Authors
-
-* **Jiri Richter** - *Initial work* - [JiriRichter](https://github.com/JiriRichter)
+[Demo](https://www.tongqingqing.name/domain) fork from jiririchter(https://jiririchter.github.io/WRFDomainWizard/)
 
 ## License
 
