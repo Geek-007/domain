@@ -48,7 +48,7 @@ var DomainWizardMap = function (options) {
         settings['div'][0],
         {
             layers: [persistentLayersControl.getCurrentLayer()],
-            center: [0, 0],
+            center: [29, 104],
             zoomControl: false,
             zoom: Math.max(persistentLayersControl.getCurrentLayer().options.minZoom, 3)
         }
