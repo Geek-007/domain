@@ -23,26 +23,26 @@ var WRFProjection = function (map_proj, ref_lat, ref_lon, truelat1, truelat2, st
             + ' +b=' + WRFProjection.radius
             + ' +towgs84=0,0,0 +no_defs=True';
     }
-    /*
-else if (map_proj == 'polar') {
-    // Polar stereographic
-    this.domain_proj = '+units=m +proj=stere'
-        + ' +lat_0=' + ((truelat1 < 0) ? -90 : 90)
-        + ' +lon_0=' + stand_lon
-        + ' +lat_ts=' + truelat1
-        + ' +a=' + WRFProjection.radius
-        + ' +b=' + WRFProjection.radius;
-        //+ ' +towgs84=0,0,0 +no_defs=True';
-}
-else if (map_proj == 'lat-lon') {
-    // Regular latitude-longitude, or cylindrical equidistant
-    this.domain_proj = '+units=m +proj=eqc'
-        + ' +lon_0=' + stand_lon
-        + ' +a=' + WRFProjection.radius
-        + ' +b=' + WRFProjection.radius
-        + ' +towgs84=0,0,0 +no_defs=True';
-}
-*/
+
+    else if (map_proj == 'polar') {
+        // Polar stereographic
+        this.domain_proj = '+units=m +proj=stere'
+            + ' +lat_0=' + ((truelat1 < 0) ? -90 : 90)
+            + ' +lon_0=' + stand_lon
+            + ' +lat_ts=' + truelat1
+            + ' +a=' + WRFProjection.radius
+            + ' +b=' + WRFProjection.radius;
+            //+ ' +towgs84=0,0,0 +no_defs=True';
+    }
+    else if (map_proj == 'lat-lon') {
+        // Regular latitude-longitude, or cylindrical equidistant
+        this.domain_proj = '+units=m +proj=eqc'
+            + ' +lon_0=' + stand_lon
+            + ' +a=' + WRFProjection.radius
+            + ' +b=' + WRFProjection.radius
+            + ' +towgs84=0,0,0 +no_defs=True';
+    }
+
     else {
         throw ("Unsupported projection " + map_proj);
     }
